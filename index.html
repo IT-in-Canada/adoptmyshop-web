@@ -8,8 +8,16 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="Adopt My Shop Platform" />
-    <meta name="keywords" content="Adopt My Shop Platform to support small business." />
+    <meta
+      name="keywords"
+      content="Adopt My Shop Platform to support small business."
+    />
     <meta name="author" content="IT Canada Collective" />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -17,12 +25,69 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!-- Main CSS to override the Bootstrap classes -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Adopt My Shop</title>
   </head>
   <body>
-    <h1>Adopt my Shop</h1>
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#"><img src="./assets/logo.svg"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nominate a Shop </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">I am a Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="support-search">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-1 col-lg-10">
+            <h1>Support Local Business</h1>
+            <p>
+              Help support your local community survive the COVID-19 closures.
+              Buy gift cards, shop online, and spread the word so that your
+              favourite shops will be around for years to come.
+            </p>
+            <form class="pt-2 pb-2">
+              <div class="row">
+                <div class="col-lg-5">
+                  <input type="text" class="form-control search mb-3" placeholder="Search for Business">
+                </div>
+                <div class="col-lg-5">
+                  <input type="text" class="form-control search mb-3" placeholder="Where">
+                </div>
+                <div class="col-md-3 col-lg-2">
+                  <button type="button" class="btn search"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
