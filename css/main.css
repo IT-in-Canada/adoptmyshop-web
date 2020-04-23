@@ -158,7 +158,12 @@ section.search-city p.city {
   font-weight: bold;
 }
 
-/* */
+/* Business Action Section*/
+section.business-action{
+  background-color: var(--second-dark-grey);
+  color: var(--white);
+
+}
 
 /* Media Queries*/
 @media (min-width: 992px) {
@@ -182,6 +187,12 @@ section.search-city p.city {
   }
   .support-search {
     height: 500px;
+  }
+}
+@media (max-width: 768px){
+ .action-item:first-of-type{
+    padding-bottom: 3em;
+  
   }
 }
 
