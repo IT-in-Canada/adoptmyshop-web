@@ -129,11 +129,43 @@ section.how-it-works span {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/* Search-City section*/
+section.search-city {
+  padding-top: 0;
+}
+
+section.search-city p.city {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 0.5em;
+  font-size: 1.2em;
+  color: var(--grey);
+}
+
+.load-more {
+  margin-top: 1.5em;
+}
+.load-more p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--grey);
+  border-top: 1px solid var(--medium-grey);
+  border-bottom: 1px solid var(--medium-grey);
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+  padding: 12px;
+  font-weight: bold;
+}
+
+/* */
+
 /* Media Queries*/
 @media (min-width: 992px) {
   section.how-it-works {
     position: relative;
     bottom: 12em;
+    height: 300px;
   }
   section.how-it-works .container {
     padding-top: 2.5em;
@@ -153,7 +185,7 @@ section.how-it-works span {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 575px) {
   .btn.search {
     display: block;
     margin: 0 auto;
@@ -161,5 +193,16 @@ section.how-it-works span {
 
   a.navbar-brand {
     order: 2;
+  }
+
+  section.how-it-works,
+  section.search-city {
+    text-align: center;
+  }
+
+  section.how-it-works img,
+  section.search-city img {
+    display: block;
+    margin: auto;
   }
 }
