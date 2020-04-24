@@ -48,6 +48,11 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
+button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* Navbar */
 nav.navbar {
   background-color: var(--white);
@@ -55,6 +60,10 @@ nav.navbar {
 
 a.navbar-brand img {
   width: 80%;
+}
+
+a.navbar-brand img:hover {
+  opacity: 0.6;
 }
 
 a.nav-link {
@@ -65,6 +74,10 @@ a.nav-link {
   font-size: 1em;
 }
 
+a.nav-link:hover {
+  color: var(--medium-grey);
+}
+
 .navbar-toggler:focus {
   outline: none;
 }
@@ -72,7 +85,8 @@ a.nav-link {
 .navbar-toggler span {
   width: 24px;
   height: 2px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
+  margin-top: 2px;
   background-color: var(--light-black);
   display: block;
   -webkit-transition: all 0.25s ease-in-out;
@@ -221,8 +235,8 @@ section.search-city a:hover {
 }
 
 /* Search-City Section Mobile*/
-section.search-city-mobile{
-  display:none;
+section.search-city-mobile {
+  display: none;
 }
 
 section.search-city-mobile img {
@@ -240,24 +254,98 @@ section.search-city-mobile a:hover {
   color: var(--medium-grey);
 }
 
-.cities .carousel-indicators{
-  display:none;
+.cities .carousel-indicators {
+  display: none;
 }
 
-.cities .carousel-control-next, .cities .carousel-control-prev{
+.cities .carousel-control-next,
+.cities .carousel-control-prev {
   bottom: 20%;
-
 }
 /* Business Action Section*/
 section.business-action {
-  background-color: var(--light-grey);
-  color: var(--grey);
+  background-color: var(--dark-grey);
+  color: var(--white);
   font-size: 0.7em;
   padding-top: 6em;
 }
 
+section.business-action img {
+  border-radius: 50%;
+}
+
+section.business-action p {
+  color: var(--medium-grey);
+}
+
+section.business-action h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+section.business-action .btn {
+  color: var(--white);
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding: 0.5em 1.2em;
+}
+
 section.business-action span {
   font-weight: bold;
+}
+
+/* Footer */
+footer {
+  padding-top: 4em;
+  padding-bottom: 3em;
+  background-color: var(--white);
+}
+
+footer .logo-footer img {
+  width: 62px;
+}
+
+footer a.logo-footer:hover {
+  opacity: 0.6;
+}
+
+footer p {
+  font-size: 0.875em;
+}
+
+footer h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+footer h5 {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: var(--light-black);
+  font-size: 1em;
+}
+
+footer .first p {
+  font-size: 1em;
+  color: var(--grey);
+  font-weight: bold;
+}
+
+footer .second p {
+  color: var(--grey);
+}
+
+footer .second a {
+  text-decoration: underline;
+  color: var(--grey);
+}
+
+footer .second a:hover {
+  color: var(--medium-grey);
 }
 
 /* Media Queries*/
@@ -267,15 +355,15 @@ section.business-action span {
     bottom: 12em;
     height: 300px;
   }
+  nav.navbar {
+    padding: 20px 60px;
+  }
 }
 
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem;
-  }
-  nav.navbar {
-    padding: 20px 60px;
   }
   .support-search {
     height: 500px;
@@ -292,17 +380,36 @@ section.business-action span {
 }
 
 @media (max-width: 575px) {
+  section,
+  footer {
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+
+  a.nav-link {
+    font-size: 0.8em;
+  }
+
+  section.support-search h1,
+  section.support-search p {
+    display: none;
+  }
+
+  section.business-action {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+  section.business-action .action-content {
+    padding-top: 1em;
+  }
+
   a.navbar-brand img {
     width: 120px;
   }
 
   .btn.search {
-    display: block;
-    margin: 0 auto;
-  }
-
-  a.navbar-brand {
-    order: 2;
+    width: 100%;
   }
 
   section.how-it-works {
@@ -329,11 +436,16 @@ section.business-action span {
     display: block;
   }
 
-  section.search-city{
-    display:none;
+  section.search-city {
+    display: none;
   }
 
-  section.search-city-mobile{
-    display:block;
+  section.search-city-mobile {
+    display: block;
+  }
+
+  footer .first {
+    order: 2;
+    padding-top: 1em;
   }
 }
