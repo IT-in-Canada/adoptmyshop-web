@@ -13,6 +13,32 @@
       content="Adopt My Shop Platform to support small business."
     />
     <meta name="author" content="IT Canada Collective" />
+    <!-- Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#292929"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <!--Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Condensed&display=swap"
@@ -24,11 +50,6 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
-    />
-    <!--Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Main CSS to override the Bootstrap classes -->
     <link rel="stylesheet" href="css/main.css" />
@@ -105,33 +126,103 @@
     <section class="how-it-works">
       <div class="container">
         <div class="row">
-          <div class="offset-lg-2 col-lg-8">
+          <div class="offset-lg-1 col-lg-10">
             <h2>How it works</h2>
             <div class="row">
-              <div class="col col-12 col-sm col-md col-lg">
-                <img class="img-fluid" src="./assets/150.png" />
+              <div class="col col-12 col-sm-4 col-md-4 col-lg">
+                <img class="img-fluid" src="./assets/150.png" alt="Action 1" />
                 <p><span>1.</span> Find your favourite local business</p>
               </div>
-              <div class="col col-12 col-sm col-md col-lg">
-                <img class="img-fluid" src="./assets/150.png" />
+              <div class="col col-12 col-sm-4 col-md-4 col-lg">
+                <img class="img-fluid" src="./assets/150.png" alt="Action 2"/>
                 <p><span>2.</span> Found it! I wanna help :)</p>
               </div>
-              <div class="col col-12 col-sm col-md col-lg">
-                <img class="img-fluid" src="./assets/150.png" />
+              <div class="col col-12 col-sm-4 col-md-4 col-lg">
+                <img class="img-fluid" src="./assets/150.png" alt="Action 3" />
                 <p><span>3.</span> You can buy a gift card for the future</p>
               </div>
-              <div class="col col-12 col-sm col-md col-lg">
-                <img class="img-fluid" src="./assets/150.png" />
+              <div class="col col-12 col-sm-4 col-md-4 col-lg">
+                <img class="img-fluid" src="./assets/150.png" alt="Action 4"/>
                 <p><span>4.</span> Or you can order online today!</p>
               </div>
-              <div class="col col-12 col-sm col-md col-lg">
-                <img class="img-fluid" src="./assets/150.png" />
+              <div class="col col-12 col-sm-4 col-md-4 col-lg">
+                <img class="img-fluid" src="./assets/150.png" alt="Action 5"/>
                 <p>
                   <span>5.</span> Thank you! With your help our local business
                   will survive!
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how-it-works-mobile">
+      <div class="container">
+        <div class="row actions">
+          <div class="col-10 offset-1 col-sm-8 offset-sm-2">
+            <div
+              id="actionsCarousel"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#actionsCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#actionsCarousel" data-slide-to="1"></li>
+                <li data-target="#actionsCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-6">
+                      <img class="img-fluid" src="./assets/150.png" alt="Action 1"/>
+                      <p><span>1.</span> Find your favourite local business</p>
+                    </div>
+                    <div class="col-6">
+                      <img class="img-fluid" src="./assets/150.png" alt="Action 2" />
+                      <p><span>2.</span> Found it! I wanna help :)</p>
+                    </div>
+                  </div>
+                  <!--.row-->
+                </div>
+                <!--.item-->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6">
+                      <img class="img-fluid" src="./assets/150.png" alt="Action 3" />
+                      <p>
+                        <span>3.</span> You can buy a gift card for the future
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img class="img-fluid" src="./assets/150.png" alt="Action 4" />
+                      <p><span>4.</span> Or you can order online today!</p>
+                    </div>
+                  </div>
+                </div>
+                <!--.item-->
+                <!--.item-->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6">
+                      <img class="img-fluid" src="./assets/150.png" alt="Action 5" />
+                      <p>
+                        <span>5.</span> Thank you! With your help our local
+                        business will survive!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--.item-->
+              </div>
+              <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
           </div>
         </div>
       </div>
@@ -143,22 +234,103 @@
             <h2>Search by City</h2>
             <div class="row">
               <div class="col-sm-6 col-md-3 col-lg-3">
-                <img class="img-fluid" src="assets/300X350.jpg" />
-                <p class="city">Vancouver</p>
+                <a href="#">
+                  <img class="img-fluid" src="assets/city.jpg" alt="City 1" />
+                  Vancouver
+                </a>
               </div>
               <div class="col-sm-6 col-md-3 col-lg-3">
-                <img class="img-fluid" src="assets/300X350.jpg" />
-                <p class="city">Toronto</p>
+                <a href="#">
+                  <img class="img-fluid" src="assets/city.jpg" alt="City 2"  />
+                  Toronto
+                </a>
               </div>
               <div class="col-sm-6 col-md-3 col-lg-3">
-                <img class="img-fluid" src="assets/300X350.jpg" />
-                <p class="city">Montreal</p>
+                <a href="#">
+                  <img class="img-fluid" src="assets/city.jpg" alt="City 3" />
+                  Montreal
+                </a>
               </div>
               <div class="col-sm-6 col-md-3 col-lg-3">
-                <img class="img-fluid" src="assets/300X350.jpg" />
-                <p class="city">Calgary</p>
+                <a href="#">
+                  <img class="img-fluid" src="assets/city.jpg" alt="City 4"/>
+                  Calgary
+                </a>
               </div>
             </div>
+            <div class="load-more">
+              <p>Load More <span>+</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search-city-mobile">
+      <div class="container">
+        <div class="row cities">
+          <div class="col-12">
+            <div
+              id="citiesCarousel"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#citiesCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#citiesCarousel" data-slide-to="1"></li>
+              </ol>
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="#">
+                        <img class="img-fluid" src="./assets/city.jpg" alt="City 1" />
+                        <p>Vancouver</p>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="#">
+                        <img class="img-fluid" src="./assets/city.jpg" alt="City 2" />
+                        <p>Toronto</p>
+                      </a>
+                    </div>
+                  </div>
+                  <!--.row-->
+                </div>
+                <!--.item-->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-6">
+                      <a href="#">
+                        <img class="img-fluid" src="./assets/city.jpg" alt="City 3" />
+                        <p>Montreal</p>
+                      </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="#">
+                        <img class="img-fluid" src="./assets/city.jpg" alt="City 4" />
+                        <p>Calgary</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--.item-->
+              </div>
+              <a class="carousel-control-prev" href="#citiesCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#citiesCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <!--.carousel-inner-->
+            </div>
+            <!--.Carousel-->
             <div class="load-more">
               <p>Load More <span>+</span></p>
             </div>
@@ -169,33 +341,33 @@
     <section class="business-action">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="row action-item">
+          <div class="col-sm-12 col-md-6 col-lg-6 action-item">
+            <div class="row">
               <div class="col-sm-3 col-md-3 col-lg-3">
-                <img class="img-fluid" src="./assets/150.png" />
+                <img class="img-fluid" src="./assets/150.png" alt="Business Action 1" />
               </div>
               <div class="col-sm-9 col-md-9 col-lg-9">
-                <h3>Are you a Business?</h3>
                 <p>
-                  Share your story with us. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  <span>Share your story with us.</span> Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam.
                 </p>
                 <button>Learn More</button>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="row action-item">
+          <div class="col-sm-12 col-md-6 col-lg-6 action-item">
+            <div class="row">
               <div class="col-sm-3 col-md-3 col-lg-3">
-                <img class="img-fluid" src="./assets/150.png" />
+                <img class="img-fluid" src="./assets/150.png" alt="Business Action 2" />
               </div>
               <div class="col-sm-9 col-md-9 col-lg-9">
-                <h3>Nominate a Shop</h3>
                 <p>
-                  Share your story with us. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  <span>You can help your favourite restaurant.</span> Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  lorem ipsum dolor.
                 </p>
                 <button>Learn More</button>
               </div>
@@ -221,5 +393,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/043967142f.js"></script>
   </body>
 </html>
