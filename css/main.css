@@ -372,7 +372,7 @@ footer .second a:hover {
 
 @media (max-width: 768px) {
   .action-item:first-of-type {
-    padding-bottom: 3em;
+    padding-bottom: 4em;
   }
   section.how-it-works .container {
     padding: 2em;
