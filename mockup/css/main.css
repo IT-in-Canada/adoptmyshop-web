@@ -180,7 +180,7 @@ section.how-it-works-mobile img {
 }
 
 section.how-it-works-mobile p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   padding-top: 1rem;
 }
 
@@ -379,8 +379,8 @@ footer .second a:hover {
 
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 1rrem;
-    padding-left: 1rrem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .support-search {
     height: 500px;
@@ -388,6 +388,9 @@ footer .second a:hover {
 }
 
 @media (max-width: 768px) {
+  :root{
+    font-size: 16px;
+  }
   .action-item:first-of-type {
     padding-bottom: 3rem;
   }
@@ -450,6 +453,7 @@ footer .second a:hover {
 
   section.business-action p {
     margin-top: 1rem;
+    font-size: 0.875rem;
   }
 
   section.how-it-works-mobile {
