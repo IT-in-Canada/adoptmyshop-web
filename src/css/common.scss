@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+body {
+  color: $light-black;
+  font-family: $font-family-primary;
+  background-color: $off-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: var(--light-black);
+  padding-bottom: 1rem;
+}
+
+a {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+button.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: $font-size-mobile;
+  }
+}
+
+@media (max-width: 575px) {
+  section,
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+}
