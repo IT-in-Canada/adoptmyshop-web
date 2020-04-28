@@ -1,0 +1,62 @@
+@import "../../css/common.scss";
+
+nav.navbar {
+  background-color: $white;
+}
+a.navbar-brand {
+  img {
+    width: 80%;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+a.nav-link {
+  color: $light-black;
+  text-transform: uppercase;
+  font-family: $font-family-third;
+  font-weight: bold;
+  font-size: 0.875rem;
+  &:hover {
+    color: $medium-grey;
+  }
+}
+.navbar-toggler {
+  &:focus {
+    outline: none;
+  }
+  span {
+    width: 24px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: $light-black;
+    display: block;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-md {
+    .navbar-nav {
+      .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+  nav.navbar {
+    padding: 20px 60px;
+  }
+}
+@media (max-width: 575px) {
+  a.nav-link {
+    font-size: 0.8rem;
+  }
+  a.navbar-brand {
+    img {
+      width: 120px;
+    }
+  }
+}
