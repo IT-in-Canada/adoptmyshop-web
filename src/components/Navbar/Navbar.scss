@@ -50,6 +50,13 @@ a.nav-link {
     padding: 20px 60px;
   }
 }
+@media (max-width: 768px) {
+  a.navbar-brand {
+    img {
+      width: 60%;
+    }
+  }
+}
 @media (max-width: 575px) {
   a.nav-link {
     font-size: 0.8rem;
