@@ -8,13 +8,12 @@
   --green-3: #8cd8d5;
   --green-4: #00beab;
   --orange: #f7686c;
-  --pink-1: #ffcfd3;
-  --pink-2: #ffcfd3;
-  --off-white: #fffdfa;
+  --pink: #ffcfd3;
+  --medium-grey: #a8a8a8;
   --dark-grey: #343434;
+
   --light-grey: #f7f7f7;
   --second-light-grey: #dedede;
-  --medium-grey: #a8a8a8;
   --grey: #696969;
   --second-dark-grey: #4a4a4a;
   font-size: 18px;
@@ -106,14 +105,8 @@ a.nav-link:hover {
 
 /* Support Search Section*/
 header {
-  background: transparent
-    linear-gradient(
-      154deg,
-      var(--pink-2) 0%,
-      var(--pink-2) 39%,
-      var(--green-2) 100%
-    )
-    0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(160deg, var(--pink) 0%, var(--green-2) 100%) 0%
+    0% no-repeat padding-box;
 }
 
 .support-search p {
@@ -179,15 +172,11 @@ section.how-it-works-mobile {
 }
 
 section.how-it-works-mobile h4 {
-  text-align: center;
   padding-bottom: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
-}
-
-section.how-it-works-mobile img {
-  border-radius: 50%;
+  color: var(--orange);
 }
 
 section.how-it-works-mobile p {
@@ -207,14 +196,14 @@ section.how-it-works-mobile span {
 }
 
 .actions .carousel-indicators li {
-  background: var(--medium-grey);
+  background: var(--green-2);
   border-radius: 50%;
   width: 8px;
   height: 8px;
 }
 
 .actions .carousel-indicators .active {
-  background: var(--grey);
+  background: var(--orange);
 }
 
 /* Search-City Section*/
@@ -270,11 +259,11 @@ section.search-city-mobile {
 }
 
 section.search-city-mobile h4 {
-  text-align: center;
   padding-bottom: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 2rem;
+  color: var(--orange);
 }
 
 section.search-city-mobile img {
@@ -369,7 +358,7 @@ footer h4 {
 
 footer h5 {
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: var(--orange);
   font-size: 1.22rem;
 }
@@ -392,7 +381,7 @@ footer .second p {
 
 footer .second a {
   text-decoration: underline;
-  color: var(--pink-1);
+  color: var(--pink);
 }
 
 footer .second a:hover {
@@ -513,7 +502,6 @@ footer .second a:hover {
   }
 
   footer .first {
-    order: 2;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
