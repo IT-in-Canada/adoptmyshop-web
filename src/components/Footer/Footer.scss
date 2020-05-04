@@ -1,0 +1,66 @@
+@import '../../css/common.scss';
+
+footer {
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	background-color: $white;
+	.logo-footer {
+		img {
+			width: 62px;
+		}
+	}
+	a.logo-footer {
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	p {
+		font-size: 0.875rem;
+	}
+	h4 {
+		font-family: $font-family-third;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+	h5 {
+		font-weight: bold;
+		font-family: $font-family-second;
+		color: $light-black;
+		font-size: 1rem;
+	}
+	.first {
+		h5 {
+			text-transform: uppercase;
+			font-family: $font-family-third;
+			margin-bottom: 0;
+		}
+		p {
+			font-size: 1rem;
+			color: $dark-grey;
+			font-weight: bold;
+		}
+	}
+	.second {
+		p {
+			color: $grey;
+		}
+		a {
+			text-decoration: underline;
+			color: $grey;
+			&:hover {
+				color: $medium-grey;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+    footer {
+        &.first {
+            order: 2;
+            padding-top: 1rem;
+          }
+    }
+}
+
