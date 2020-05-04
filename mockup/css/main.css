@@ -11,11 +11,6 @@
   --pink: #ffcfd3;
   --medium-grey: #a8a8a8;
   --dark-grey: #343434;
-
-  /* --light-grey: #f7f7f7;
-  --second-light-grey: #dedede;
-  --grey: #696969;
-  --second-dark-grey: #4a4a4a; */
   font-size: 18px;
 }
 
@@ -105,8 +100,9 @@ a.nav-link:hover {
 
 /* Support Search Section*/
 header {
-  background: transparent linear-gradient(160deg, var(--pink) 0%, var(--green-2) 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(160deg, var(--pink) 0%, var(--green-2) 100%) 0% 0% no-repeat
+    padding-box;
 }
 
 .support-search p {
