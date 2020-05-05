@@ -3,7 +3,7 @@
 body {
   color: $light-black;
   font-family: $font-family-primary;
-  background-color: $off-white;
+  background-color: $white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -22,17 +22,23 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 3rem;
+  color: $blue;
 }
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.75rem;
-  color: var(--light-black);
+  color: $orange;
   padding-bottom: 1rem;
 }
 
-a {
+button {
+  cursor: pointer;
+}
+
+a,
+button.btn {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -41,6 +47,11 @@ a {
 button.btn:focus {
   outline: none;
   box-shadow: none;
+}
+
+header {
+  background: transparent linear-gradient(160deg, $pink 0%, $green-2 100%) 0% 0%
+    no-repeat padding-box;
 }
 
 @media (max-width: 768px) {
