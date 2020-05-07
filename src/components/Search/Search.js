@@ -8,12 +8,14 @@ export default function Search() {
             <div className="container">
                 <div className="row">
                     <div className="offset-lg-1 col-lg-10">
-                        <h1>Support Local Business</h1>
-                        <p>
-                            Help support your local community survive the COVID-19 closures.
-                            Buy gift cards, shop online, and spread the word so that your
-                            favourite shops will be around for years to come.
-                        </p>
+                        <div className="hide-mobile">
+                            <h1>Support Local Business</h1>
+                            <p>
+                                Help support your local community survive the COVID-19 closures.
+                                Buy gift cards, shop online, and spread the word so that your
+                                favourite shops will be around for years to come.
+                            </p>
+                        </div>
                         <form className="pt-2 pb-2">
                             <div className="row">
                                 <div className="col-lg-5">

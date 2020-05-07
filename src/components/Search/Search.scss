@@ -36,8 +36,8 @@ input.form-control.search {
     font-size: 0.9rem;
   }
 }
-button{
-  &.btn{
+button {
+  &.btn {
     &.search {
       color: $white;
       background-color: $orange;
@@ -46,7 +46,7 @@ button{
       width: 150px;
       font-family: "Roboto Condensed", sans-serif;
       text-transform: uppercase;
-      span{
+      span {
         position: relative;
         top: 2px;
         left: 2px;
@@ -55,8 +55,8 @@ button{
       &:hover {
         opacity: 0.6;
       }
+    }
   }
-}
 }
 
 /* Media Queries*/
@@ -67,7 +67,12 @@ button{
 }
 
 @media (max-width: 575px) {
-  .btn.search {
-    width: 100%;
+  .support-search {
+    .hide-mobile {
+      display: none !important;
+    }
+    .btn.search {
+      width: 100%;
+    }
   }
 }
