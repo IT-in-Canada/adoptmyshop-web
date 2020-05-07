@@ -68,8 +68,12 @@ button {
 
 @media (max-width: 575px) {
   .support-search {
-    .hide-mobile {
-      display: none !important;
+    padding-top: 2em;
+    h1{
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 0.9rem;
     }
     .btn.search {
       width: 100%;

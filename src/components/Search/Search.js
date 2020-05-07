@@ -8,7 +8,7 @@ export default function Search() {
             <div className="container">
                 <div className="row">
                     <div className="offset-lg-1 col-lg-10">
-                        <div className="hide-mobile">
+                        <div className="content">
                             <h1>Support Local Business</h1>
                             <p>
                                 Help support your local community survive the COVID-19 closures.
