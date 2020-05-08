@@ -1,5 +1,7 @@
+@import "./../../css/common.scss";
+
 header {
   background: transparent
-    linear-gradient(160deg, var(--pink) 0%, var(--green-2) 100%) 0% 0% no-repeat
+    linear-gradient(160deg, $pink 0%, $green-2 start 100%) 0% 0% no-repeat
     padding-box;
 }

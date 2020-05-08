@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+:root{
+  font-size: $font-size-desktop;
+}
+
 body {
   color: $light-black;
   font-family: $font-family-primary;
@@ -16,13 +20,6 @@ section {
 
 p {
   font-size: 1.125rem;
-}
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  color: $blue;
 }
 
 h2 {

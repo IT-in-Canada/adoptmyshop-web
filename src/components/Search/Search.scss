@@ -1,0 +1,82 @@
+@import "./../../css/common.scss";
+
+.support-search {
+  p {
+    font-weight: bold;
+    color: $light-black;
+  }
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: $blue;
+  }
+}
+.form-control {
+  &.search {
+    border-radius: 0;
+    padding: 1.8rem 1rem;
+  }
+}
+input.form-control.search {
+  &::-webkit-input-placeholder {
+    color: $medium-grey;
+    font-size: 0.9rem;
+  }
+  &::-moz-placeholder {
+    color: $medium-grey;
+    font-size: 0.9rem;
+  }
+  &:-ms-input-placeholder {
+    color: $medium-grey;
+    font-size: 0.9rem;
+  }
+  &:-moz-placeholder {
+    color: $medium-grey;
+    font-size: 0.9rem;
+  }
+}
+button {
+  &.btn {
+    &.search {
+      color: $white;
+      background-color: $orange;
+      border-radius: 0;
+      padding: 1rem 1.6rem;
+      width: 150px;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase;
+      span {
+        position: relative;
+        top: 2px;
+        left: 2px;
+        font-size: 1.05rem;
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+/* Media Queries*/
+@media (min-width: 992px) {
+  .support-search {
+    height: 500px;
+  }
+}
+
+@media (max-width: 575px) {
+  .support-search {
+    padding-top: 2em;
+    h1{
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+    .btn.search {
+      width: 100%;
+    }
+  }
+}
