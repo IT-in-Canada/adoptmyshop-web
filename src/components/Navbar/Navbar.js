@@ -3,7 +3,7 @@ import './Navbar.scss'
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-md">
+        <nav className="navbar container navbar-expand-md navbar-ams">
             <a className="navbar-brand" href="#"
             ><img src="./assets/logo-header.svg" alt=" Logo Header"
                 /></a>
@@ -16,9 +16,9 @@ export default function Navbar() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
             >
-                <span></span>
-                <span></span>
-                <span></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav ml-auto">

@@ -1,6 +1,7 @@
-@import "./../../css/common.scss";
+@import "./../../css/variables.scss";
 
 .support-search {
+  padding-top: 1rem;
   p {
     font-weight: bold;
     color: $light-black;
@@ -8,7 +9,6 @@
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-size: 3rem;
     color: $blue;
   }
 }

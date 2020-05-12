@@ -5,6 +5,7 @@ import HowItWorks from './components/HowItWorks';
 import SearchCity from './components/SearchCity';
 import BusinessAction from './components/BusinessAction';
 import Footer from './components/Footer';
+import './css/app.scss';
 
 function App() {
   return (
