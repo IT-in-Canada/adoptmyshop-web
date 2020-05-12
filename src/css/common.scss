@@ -47,7 +47,7 @@ header {
     no-repeat padding-box;
 }
 @media (max-width: 768px) {
-  &:root {
+  :root {
     font-size: $font-size-mobile;
   }
 }
