@@ -1,0 +1,46 @@
+@import "./../../css/common.scss";
+
+section.business-action {
+	background: transparent linear-gradient(179deg, $green-5 0%, $green-6 39%, $green-3 100%) 0% 0% no-repeat padding-box;
+	font-size: 0.7rem;
+	padding-top: 6rem;
+	p {
+		color: $light-black;
+		font-size: 0.75rem;
+	}
+	h5 {
+		font-family: $font-family-second;
+		font-size: 1.44rem;
+		color: $green-4;
+		font-weight: bold;
+	}
+	.btn {
+		color: $blue;
+		background-color: transparent;
+		border-radius: 0;
+		font-family: $font-family-third;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 0;
+		&:hover {
+			color: $light-black;
+		}
+	}
+	span {
+		font-weight: bold;
+	}
+}
+@media (max-width: 575px) {
+	section.business-action {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		.action-content {
+			padding-top: 1rem;
+		}
+		p {
+			margin-top: 1rem;
+			font-size: 0.875rem;
+		}
+	}
+}
+
