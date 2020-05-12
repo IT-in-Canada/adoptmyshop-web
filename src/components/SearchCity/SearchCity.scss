@@ -1,0 +1,95 @@
+@import "./../../css/common.scss";
+
+section.search-city {
+  padding-top: 2rem;
+  img {
+    margin-bottom: 1rem;
+  }
+  a {
+    font-family: $font-family-third;
+    font-size: 1.3rem;
+    color: $light-black;
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+.load-more {
+  margin-top: 2.5rem;
+  p {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font-family-third;
+    color: $blue;
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      color: $light-black;
+      border-top: 1px solid $light-black;
+      border-bottom: 1px solid $light-black;
+    }
+  }
+}
+section.search-city-mobile {
+  display: none;
+  h4 {
+    padding-bottom: 1rem;
+    font-family: $font-family-second;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $orange;
+  }
+  img {
+    margin-bottom: 1rem;
+  }
+  a {
+    font-family: $font-family-third;
+    font-size: 1.2rem;
+    color: $light-black;
+    &:hover {
+      text-decoration: none;
+      color: var(--medium-grey);
+    }
+  }
+}
+.cities {
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-control-next {
+    bottom: 20%;
+  }
+  .carousel-control-prev {
+    bottom: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .load-more {
+    p {
+      width: 85%;
+    }
+  }
+}
+@media (max-width: 575px) {
+  section.search-city {
+    text-align: center;
+    display: none;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+  section.search-city-mobile {
+    display: block;
+  }
+}
