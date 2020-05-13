@@ -1,6 +1,6 @@
 @import "./../../css/variables.scss";
 
-.support-search {
+section.search {
   padding-top: 1rem;
   p {
     font-weight: bold;
@@ -11,49 +11,50 @@
     font-weight: bold;
     color: $blue;
   }
-}
-.form-control {
-  &.search {
-    border-radius: 0;
-    padding: 1.8rem 1rem;
-  }
-}
-input.form-control.search {
-  &::-webkit-input-placeholder {
-    color: $medium-grey;
-    font-size: 0.9rem;
-  }
-  &::-moz-placeholder {
-    color: $medium-grey;
-    font-size: 0.9rem;
-  }
-  &:-ms-input-placeholder {
-    color: $medium-grey;
-    font-size: 0.9rem;
-  }
-  &:-moz-placeholder {
-    color: $medium-grey;
-    font-size: 0.9rem;
-  }
-}
-button {
-  &.btn {
-    &.search {
-      color: $white;
-      background-color: $orange;
+
+  .form-control {
+    &.search-control {
       border-radius: 0;
-      padding: 1rem 1.6rem;
-      width: 150px;
-      font-family: "Roboto Condensed", sans-serif;
-      text-transform: uppercase;
-      span {
-        position: relative;
-        top: 2px;
-        left: 2px;
-        font-size: 1.05rem;
-      }
-      &:hover {
-        opacity: 0.6;
+      padding: 1.8rem 1rem;
+    }
+  }
+  input.form-control.search-control {
+    &::-webkit-input-placeholder {
+      color: $medium-grey;
+      font-size: 0.9rem;
+    }
+    &::-moz-placeholder {
+      color: $medium-grey;
+      font-size: 0.9rem;
+    }
+    &:-ms-input-placeholder {
+      color: $medium-grey;
+      font-size: 0.9rem;
+    }
+    &:-moz-placeholder {
+      color: $medium-grey;
+      font-size: 0.9rem;
+    }
+  }
+  button {
+    &.btn {
+      &.search-control {
+        color: $white;
+        background-color: $orange;
+        border-radius: 0;
+        padding: 1rem 1.6rem;
+        width: 150px;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        span {
+          position: relative;
+          top: 2px;
+          left: 2px;
+          font-size: 1.05rem;
+        }
+        &:hover {
+          opacity: 0.6;
+        }
       }
     }
   }
@@ -61,18 +62,18 @@ button {
 
 /* Media Queries*/
 @media (min-width: 992px) {
-  .support-search {
+  section.search {
     height: 500px;
   }
 }
 
 @media (max-width: 575px) {
-  .support-search {
+  section.search {
     padding-top: 2em;
-    h1{
+    h1 {
       font-size: 1.3rem;
     }
-    p{
+    p {
       font-size: 0.9rem;
     }
     .btn.search {

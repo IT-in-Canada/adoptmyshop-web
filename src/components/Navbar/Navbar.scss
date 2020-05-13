@@ -1,57 +1,51 @@
 @import "../../css/variables.scss";
 
-.navbar-ams{
-  padding-top: 2.2rem!important;
-}
-
-a.navbar-brand {
-  img {
-    width: 100%;
+.navbar {
+  &.navbar-ams {
+    padding-top: 2.2rem !important;
+  }
+  a.navbar-brand {
+    img {
+      width: 100%;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  a.nav-link {
+    color: $light-black;
+    text-transform: uppercase;
+    font-family: $font-family-third;
+    font-weight: bold;
+    font-size: 0.9rem;
     &:hover {
-      opacity: 0.6;
+      color: $blue;
+    }
+  }
+  .navbar-toggler {
+    &:focus {
+      outline: none;
     }
   }
 }
-a.nav-link {
-  color: $light-black;
-  text-transform: uppercase;
-  font-family: $font-family-third;
-  font-weight: bold;
-  font-size: 0.9rem;
-  &:hover {
-    color: $blue;
-  }
-}
-.navbar-toggler {
-  &:focus {
-    outline: none;
-  }
-  span.icon-bar {
-    width: 24px;
-    height: 2px;
-    margin-top: 4px;
-    background-color: $light-black;
-    display: block;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-  }
-}
-
 @media (max-width: 992px) {
-  a.navbar-brand {
-    img {
-      width: 180px;
+  .navbar {
+    a.navbar-brand {
+      img {
+        width: 180px;
+      }
     }
   }
 }
 @media (max-width: 575px) {
-  a.nav-link {
-    font-size: 0.8rem;
-  }
-  a.navbar-brand {
-    img {
-      width: 130px;
+  .navbar {
+    a.nav-link {
+      font-size: 0.8rem;
+    }
+    a.navbar-brand {
+      img {
+        width: 130px;
+      }
     }
   }
 }

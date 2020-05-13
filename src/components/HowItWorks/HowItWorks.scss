@@ -30,21 +30,21 @@ section.how-it-works-mobile {
     font-size: 1rem;
     font-weight: bold;
   }
-}
-.actions {
-  .carousel-indicators {
-    left: 0;
-    top: auto;
-    bottom: -25px;
-    li {
-      background: $green-2;
-      border-radius: 50%;
-      width: 8px;
-      height: 8px;
-      border: none;
-    }
-    .active {
-      background: $orange;
+  .actions {
+    .carousel-indicators {
+      left: 0;
+      top: auto;
+      bottom: -25px;
+      li {
+        background: $green-2;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        border: none;
+      }
+      .active {
+        background: $orange;
+      }
     }
   }
 }
@@ -63,12 +63,11 @@ section.how-it-works-mobile {
   }
 }
 @media (max-width: 768px) {
-  &:root {
-    font-size: 16px;
-  }
-  .action-item {
-    &:first-of-type {
-      padding-bottom: 3rem;
+  section.how-it-works-mobile {
+    .action-item {
+      &:first-of-type {
+        padding-bottom: 3rem;
+      }
     }
   }
   section.how-it-works {
