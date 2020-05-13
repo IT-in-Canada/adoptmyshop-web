@@ -4,10 +4,10 @@ import { FaSearch } from 'react-icons/fa';
 
 export default function Search() {
     return (
-        <section className="support-search">
+        <section className="search">
             <div className="container">
-                <div className="row">
-                    <div className="offset-lg-1 col-lg-10">
+                <div className="row no-gutters">
+                    <div className="col-lg-10">
                         <div className="content">
                             <h1>Support Local Business</h1>
                             <p>
@@ -18,22 +18,22 @@ export default function Search() {
                         </div>
                         <form className="pt-2 pb-2">
                             <div className="row">
-                                <div className="col-lg-5">
+                                <div className="col-lg-4">
                                     <input
                                         type="text"
-                                        className="form-control search mb-3"
+                                        className="form-control search-control mb-3"
                                         placeholder="Search for Business"
                                     />
                                 </div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-4">
                                     <input
                                         type="text"
-                                        className="form-control search mb-3"
+                                        className="form-control search-control mb-3"
                                         placeholder="Where"
                                     />
                                 </div>
                                 <div className="col-md-3 col-lg-2">
-                                    <button type="button" className="btn search">
+                                    <button type="button" className="btn search-control">
                                         <FaSearch /><span> Search</span>
                                     </button>
                                 </div>
@@ -43,6 +43,5 @@ export default function Search() {
                 </div>
             </div>
         </section>
-
     );
 }

@@ -1,4 +1,4 @@
-@import "./../../css/common.scss";
+@import "./../../css/variables.scss";
 
 section.how-it-works {
   .container {
@@ -30,28 +30,28 @@ section.how-it-works-mobile {
     font-size: 1rem;
     font-weight: bold;
   }
-}
-.actions {
-  .carousel-indicators {
-    left: 0;
-    top: auto;
-    bottom: -25px;
-    li {
-      background: $green-2;
-      border-radius: 50%;
-      width: 8px;
-      height: 8px;
-      border: none;
-    }
-    .active {
-      background: $orange;
+  .actions {
+    .carousel-indicators {
+      left: 0;
+      top: auto;
+      bottom: -25px;
+      li {
+        background: $green-2;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        border: none;
+      }
+      .active {
+        background: $orange;
+      }
     }
   }
 }
 @media (min-width: 992px) {
   section.how-it-works {
     position: relative;
-    bottom: 12rem;
+    top: -13.8rem;
     height: 300px;
     .container {
       position: relative;
@@ -61,33 +61,13 @@ section.how-it-works-mobile {
       border-top-right-radius: 150px;
     }
   }
-  .support-search {
-    height: 500px;
-  }
-  .navbar-expand-md {
-    .navbar-nav {
-      .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
-      }
-    }
-  }
-  nav.navbar {
-    padding: 20px 60px;
-  }
 }
 @media (max-width: 768px) {
-  &:root {
-    font-size: 16px;
-  }
-  a.navbar-brand {
-    img {
-      width: 60%;
-    }
-  }
-  .action-item {
-    &:first-of-type {
-      padding-bottom: 3rem;
+  section.how-it-works-mobile {
+    .action-item {
+      &:first-of-type {
+        padding-bottom: 3rem;
+      }
     }
   }
   section.how-it-works {

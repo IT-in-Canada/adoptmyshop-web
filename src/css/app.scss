@@ -42,10 +42,7 @@ button.btn {
     box-shadow: none;
   }
 }
-header {
-  background: transparent linear-gradient(160deg, $pink 0%, $green-2 100%) 0% 0%
-    no-repeat padding-box;
-}
+
 @media (max-width: 768px) {
   :root {
     font-size: $font-size-mobile;

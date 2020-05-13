@@ -1,66 +1,51 @@
-@import "../../css/common.scss";
+@import "../../css/variables.scss";
 
-a.navbar-brand {
-  img {
-    width: 100%;
-    &:hover {
-      opacity: 0.6;
-    }
+.navbar {
+  &.navbar-ams {
+    padding-top: 2.2rem !important;
   }
-}
-a.nav-link {
-  color: $light-black;
-  text-transform: uppercase;
-  font-family: $font-family-third;
-  font-weight: bold;
-  font-size: 0.9rem;
-  &:hover {
-    color: $blue;
-  }
-}
-.navbar-toggler {
-  &:focus {
-    outline: none;
-  }
-  span {
-    width: 24px;
-    height: 2px;
-    margin-top: 4px;
-    background-color: $light-black;
-    display: block;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-md {
-    .navbar-nav {
-      .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
+  a.navbar-brand {
+    img {
+      width: 100%;
+      &:hover {
+        opacity: 0.6;
       }
     }
   }
-  nav.navbar {
-    padding: 20px 60px;
+  a.nav-link {
+    color: $light-black;
+    text-transform: uppercase;
+    font-family: $font-family-third;
+    font-weight: bold;
+    font-size: 0.9rem;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .navbar-toggler {
+    &:focus {
+      outline: none;
+    }
   }
 }
-@media (max-width: 768px) {
-  a.navbar-brand {
-    img {
-      width: 60%;
+@media (max-width: 992px) {
+  .navbar {
+    a.navbar-brand {
+      img {
+        width: 180px;
+      }
     }
   }
 }
 @media (max-width: 575px) {
-  a.nav-link {
-    font-size: 0.8rem;
-  }
-  a.navbar-brand {
-    img {
-      width: 150px !important;
+  .navbar {
+    a.nav-link {
+      font-size: 0.8rem;
+    }
+    a.navbar-brand {
+      img {
+        width: 130px;
+      }
     }
   }
 }

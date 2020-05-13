@@ -1,24 +1,15 @@
 import React from 'react';
 import './Navbar.scss'
+import { FaBars } from 'react-icons/fa';
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-md">
-            <a className="navbar-brand" href="#"
-            ><img src="./assets/logo-header.svg" alt=" Logo Header"
-                /></a>
-            <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarText"
-                aria-controls="navbarText"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
+        <nav className="navbar container navbar-expand-md navbar-ams">
+            <a className="navbar-brand" href="#">
+                <img src="./assets/logo-header.svg" alt=" Logo Header" />
+            </a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <FaBars />
             </button>
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav ml-auto">
