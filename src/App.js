@@ -1,21 +1,17 @@
 import React from 'react';
-import { Fragment } from 'react';
-import Header from './components/Header';
-import HowItWorks from './components/HowItWorks';
-import SearchCity from './components/SearchCity';
-import BusinessAction from './components/BusinessAction';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
+import AdoptMyShop from './components/AdoptMyShop';
 import './css/app.scss';
 
 function App() {
   return (
-    <Fragment>
-      <Header />
-      <HowItWorks />
-      <SearchCity />
-      <BusinessAction />
-      <Footer />
-    </Fragment>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/adopt-my-shop" component={AdoptMyShop} />
+      </Switch>
+    </Router>
   );
 }
 export default App;
