@@ -3,11 +3,12 @@ import './Header.scss';
 import Navbar from '../Navbar';
 import Search from '../Search';
 
-export default function Header() {
+export default function Header(props) {
+    const renderStyle = props.renderStyle || "full";
     return (
-        <header>
+        <header className={renderStyle}>
             <Navbar />
-            <Search />
+            <Search renderStyle={renderStyle} />
         </header>
     );
 }

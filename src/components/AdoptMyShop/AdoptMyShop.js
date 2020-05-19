@@ -5,7 +5,7 @@ import Footer from '../Footer';
 export default function AdoptMyShop() {
     return (
         <Fragment>
-            <Header />
+            <Header renderStyle="slim" />
             <Footer />
         </Fragment>
     );
