@@ -1,8 +1,14 @@
 @import "./../../css/variables.scss";
 
-section{
-    &.side-content{
-        padding: unset;
-        padding-top: 2rem;
+section {
+  &.side-content {
+    padding: unset;
+    padding-top: 2rem;
+  }
+  .input-block {
+    padding-bottom: 1rem;
+    &:last-child {
+      padding-bottom: 0;
     }
+  }
 }
