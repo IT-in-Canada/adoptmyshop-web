@@ -43,6 +43,23 @@ export default function AdoptMyShop() {
                                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam condimentum, mattis erat eu, lobortis elit."
                             />
                         </div>
+                        <div className="offset-md-1 col-md-8">
+                            <div className="input-block">
+                                <Input type="text" name="business-name" placeholder="Business Name" />
+                                <Label htmlFor="business-name" text="Enter your Business Name" />
+                            </div>
+                            <div className="input-block">
+                                <select name="market" id="market-select" className="full-select">
+                                    <option value="">Market</option>
+                                    <option value="food">Food</option>
+                                    <option value="fashion">Fashion</option>
+                                    <option value="education">Education</option>
+                                    <option value="decoration">Decoration</option>
+                                    <option value="technology">Technology</option>
+                                </select>
+                                <Label htmlFor="market-select" text="Select your Market" />
+                            </div>
+                        </div>
                     </section>
                 </div>
             </section>
