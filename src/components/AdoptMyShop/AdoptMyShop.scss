@@ -1,0 +1,8 @@
+@import "./../../css/variables.scss";
+
+section{
+    &.side-content{
+        padding: unset;
+        padding-top: 2rem;
+    }
+}
