@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import './BusinessAction.scss';
+import { Link } from 'react-router-dom';
 
 export default function BusinessAction() {
     return (
@@ -24,10 +25,12 @@ export default function BusinessAction() {
                   incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                   veniam.
                 </p>
-                                <button className="btn">
-                                    Learn More &nbsp;<span
-                                    ><FaLongArrowAltRight/></span>
-                                </button>
+                                <Link to="/adopt-my-shop" title="Go to Adopt my Shop">
+                                    <button className="btn">
+                                        Learn More &nbsp;<span
+                                        ><FaLongArrowAltRight /></span>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
