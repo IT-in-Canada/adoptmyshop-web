@@ -23,16 +23,16 @@ export default function AdoptMyShop() {
                         </div>
                         <div className="offset-md-1 col-md-8">
                             <div className="input-block">
-                                <Input type="text" name="full-name" placeholder="Full Name" />
-                                <Label htmlFor="full-name" text="Enter your Full Name" />
+                                <Input type="text" name="full-name" placeholder="Full Name" required/>
+                                <Label htmlFor="full-name" text="Enter your Full Name" required/>
                             </div>
                             <div className="input-block">
-                                <Input type="email" name="email" placeholder="Email" />
+                                <Input type="email" name="email" placeholder="Email" required/>
                                 <Label htmlFor="email" text="Enter your Email" />
                             </div>
                             <div className="input-block">
-                                <Input type="phone" name="phone" placeholder="Phone" />
-                                <Label htmlFor="phone" text="Enter your Phone Number" />
+                                <Input type="phone" name="personal-phone" placeholder="Phone" required/>
+                                <Label htmlFor="personal-phone" text="Enter your Phone Number" />
                             </div>
                         </div>
                     </section>
@@ -45,7 +45,7 @@ export default function AdoptMyShop() {
                         </div>
                         <div className="offset-md-1 col-md-8">
                             <div className="input-block">
-                                <Input type="text" name="business-name" placeholder="Business Name" />
+                                <Input type="text" name="business-name" placeholder="Business Name" required/>
                                 <Label htmlFor="business-name" text="Enter your Business Name" />
                             </div>
                             <div className="input-block">
@@ -58,6 +58,18 @@ export default function AdoptMyShop() {
                                     <option value="technology">Technology</option>
                                 </select>
                                 <Label htmlFor="market-select" text="Select your Market" />
+                            </div>
+                            <div className="input-block">
+                                <Input type="text" name="main-address" placeholder="Main Address" required/>
+                                <Label htmlFor="" text="Enter your Business Address" />
+                            </div>
+                            <div className="input-block">
+                                <Input type="phone" name="business-phone" placeholder="Phone" required/>
+                                <Label htmlFor="business-phone" text="Enter your Business Phone Number" />
+                            </div>
+                            <div className="input-block">
+                                <Input type="text" name="business-website" placeholder="URL (optional)"/>
+                                <Label htmlFor="business-website" text="Enter your Business Website" />
                             </div>
                         </div>
                     </section>
