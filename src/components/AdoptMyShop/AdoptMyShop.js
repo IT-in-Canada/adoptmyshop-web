@@ -5,6 +5,7 @@ import Title from '../Form/Title';
 import SideContent from '../Form/SideContent';
 import Input from '../Form/Input';
 import Label from '../Form/Label';
+import Textarea from '../Form/Textarea';
 import './AdoptMyShop.scss';
 
 export default function AdoptMyShop() {
@@ -23,15 +24,15 @@ export default function AdoptMyShop() {
                         </div>
                         <div className="offset-md-1 col-md-8">
                             <div className="input-block">
-                                <Input type="text" name="full-name" placeholder="Full Name" required/>
-                                <Label htmlFor="full-name" text="Enter your Full Name" required/>
+                                <Input type="text" name="full-name" placeholder="Full Name" required />
+                                <Label htmlFor="full-name" text="Enter your Full Name" required />
                             </div>
                             <div className="input-block">
-                                <Input type="email" name="email" placeholder="Email" required/>
+                                <Input type="email" name="email" placeholder="Email" required />
                                 <Label htmlFor="email" text="Enter your Email" />
                             </div>
                             <div className="input-block">
-                                <Input type="phone" name="personal-phone" placeholder="Phone" required/>
+                                <Input type="phone" name="personal-phone" placeholder="Phone" required />
                                 <Label htmlFor="personal-phone" text="Enter your Phone Number" />
                             </div>
                         </div>
@@ -45,7 +46,7 @@ export default function AdoptMyShop() {
                         </div>
                         <div className="offset-md-1 col-md-8">
                             <div className="input-block">
-                                <Input type="text" name="business-name" placeholder="Business Name" required/>
+                                <Input type="text" name="business-name" placeholder="Business Name" required />
                                 <Label htmlFor="business-name" text="Enter your Business Name" />
                             </div>
                             <div className="input-block">
@@ -60,16 +61,26 @@ export default function AdoptMyShop() {
                                 <Label htmlFor="market-select" text="Select your Market" />
                             </div>
                             <div className="input-block">
-                                <Input type="text" name="main-address" placeholder="Main Address" required/>
+                                <Input type="text" name="main-address" placeholder="Main Address" required />
                                 <Label htmlFor="" text="Enter your Business Address" />
                             </div>
                             <div className="input-block">
-                                <Input type="phone" name="business-phone" placeholder="Phone" required/>
+                                <Input type="phone" name="business-phone" placeholder="Phone" required />
                                 <Label htmlFor="business-phone" text="Enter your Business Phone Number" />
                             </div>
                             <div className="input-block">
-                                <Input type="text" name="business-website" placeholder="URL (optional)"/>
+                                <Input type="text" name="business-website" placeholder="URL (optional)" />
                                 <Label htmlFor="business-website" text="Enter your Business Website" />
+                            </div>
+                            <div className="input-block">
+                                <Textarea id="business-description" rows="5" cols="10"
+                                    placeholder="Describe your Business" required />
+                                <Label htmlFor="business-description" text="Business Description" />
+                            </div>
+                            <div className="input-block">
+                                <Textarea id="products-description" rows="5" cols="10"
+                                    placeholder="Which products are you currently offering for takeout/delivery?" required />
+                                <Label htmlFor="products-description" text="Products Description" />
                             </div>
                         </div>
                     </section>
