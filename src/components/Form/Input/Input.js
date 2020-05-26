@@ -1,8 +1,8 @@
 import React from 'react';
 import './Input.scss';
 
-export default function Input(props) {
+export default function Input({type, name, placeholder}) {
     return (
-        <input type={props.type} name={props.name} placeholder={props.placeholder} className="full-input" />
+        <input type={type} name={name} placeholder={placeholder} className="full-input" />
     )
 }

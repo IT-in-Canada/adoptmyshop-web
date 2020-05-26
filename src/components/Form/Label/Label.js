@@ -1,8 +1,8 @@
 import React from 'react';
 import './Label.scss';
 
-export default function Label(props){
+export default function Label({htmlFor, text}){
     return(
-        <label htmlFor={props.htmlFor}>{props.text}</label>
+        <label htmlFor={htmlFor}>{text}</label>
     )
 }

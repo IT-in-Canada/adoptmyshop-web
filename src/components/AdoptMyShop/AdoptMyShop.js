@@ -73,12 +73,12 @@ export default function AdoptMyShop() {
                                 <Label htmlFor="business-website" text="Enter your Business Website" />
                             </div>
                             <div className="input-block">
-                                <Textarea id="business-description" rows="5" cols="10"
+                                <Textarea id="business-description" rows="5" cols="10" maxLength='250'
                                     placeholder="Describe your Business" required />
                                 <Label htmlFor="business-description" text="Business Description" />
                             </div>
                             <div className="input-block">
-                                <Textarea id="products-description" rows="5" cols="10"
+                                <Textarea id="products-description" rows="5" cols="10" maxLength='250'
                                     placeholder="Which products are you currently offering for takeout/delivery?" required />
                                 <Label htmlFor="products-description" text="Products Description" />
                             </div>

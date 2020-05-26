@@ -1,10 +1,10 @@
 import React from 'react';
 import './Textarea.scss';
 
-export default function Textarea(props) {
+export default function Textarea({textareaId, rows, cols, placeholder, maxLength}) {
     return (
-        <textarea id={props.textareaId} rows={props.rows} cols={props.cols}
-            placeholder={props.placeholder} maxLength={300} className="full-textarea">
+        <textarea id={textareaId} rows={rows} cols={cols}
+            placeholder={placeholder} maxLength={maxLength} className="full-textarea">
         </textarea>
     )
 }
