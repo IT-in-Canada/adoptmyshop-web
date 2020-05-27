@@ -7,6 +7,8 @@ import Input from '../Form/Input';
 import Label from '../Form/Label';
 import Textarea from '../Form/Textarea';
 import Upload from '../Form/Upload';
+import SocialMediaTitle from '../Form/SocialMediaTitle';
+import facebookIcon from './images/facebook.svg';
 import './AdoptMyShop.scss';
 
 export default function AdoptMyShop() {
@@ -16,8 +18,8 @@ export default function AdoptMyShop() {
             <section className="form-page">
                 <div className="container">
                     <Title title="Adopt my Shop" />
-                    <section className="row side-content">
-                        <div className="col-md-3">
+                    <section className="row">
+                        <div className="col-md-3 side-content">
                             <SideContent
                                 title="Personal Information"
                                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam condimentum, mattis erat eu, lobortis elit."
@@ -38,8 +40,8 @@ export default function AdoptMyShop() {
                             </div>
                         </div>
                     </section>
-                    <section className="row side-content">
-                        <div className="col-md-3">
+                    <section className="row">
+                        <div className="col-md-3 side-content">
                             <SideContent
                                 title="Business Information"
                                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam condimentum, mattis erat eu, lobortis elit."
@@ -84,9 +86,24 @@ export default function AdoptMyShop() {
                                 <Label htmlFor="products-description" text="Products Description" />
                             </div>
                             <div className="input-block">
-                                <Upload title="Upload Image"/>
+                                <Upload title="Upload Image" />
                             </div>
                         </div>
+                    </section>
+                    <section className="row">
+                        <div className="col-md-3 side-content">
+                            <SideContent
+                                title="Social Media Accounts"
+                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam condimentum, mattis erat eu, lobortis elit."
+                            />
+                        </div>
+                        <div className="offset-md-1 col-md-8">
+                            <SocialMediaTitle icon={facebookIcon} alt="Facebook Icon"
+                            title="Facebook" />
+                            <Input type="text" name="facebook-account" placeholder="https://www.facebook.com/yourstore/" />
+                            <Label htmlFor="facebook-account" text="Enter your Facebook account link" />
+                        </div>
+
                     </section>
                 </div>
             </section>
