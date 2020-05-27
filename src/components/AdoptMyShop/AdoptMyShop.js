@@ -9,6 +9,9 @@ import Textarea from '../Form/Textarea';
 import Upload from '../Form/Upload';
 import SocialMediaTitle from '../Form/SocialMediaTitle';
 import facebookIcon from './images/facebook.svg';
+import instagramIcon from './images/instagram.svg';
+import twitterIcon from './images/twitter.svg';
+import linkedinIcon from './images/linkedin.svg';
 import './AdoptMyShop.scss';
 
 export default function AdoptMyShop() {
@@ -98,12 +101,31 @@ export default function AdoptMyShop() {
                             />
                         </div>
                         <div className="offset-md-1 col-md-8">
-                            <SocialMediaTitle icon={facebookIcon} alt="Facebook Icon"
-                            title="Facebook" />
-                            <Input type="text" name="facebook-account" placeholder="https://www.facebook.com/yourstore/" />
-                            <Label htmlFor="facebook-account" text="Enter your Facebook account link" />
+                            <div className="input-block">
+                                <SocialMediaTitle icon={facebookIcon} alt="Facebook Icon"
+                                    title="Facebook" />
+                                <Input type="text" name="facebook-account" placeholder="https://www.facebook.com/yourstore/" />
+                                <Label htmlFor="facebook-account" text="Enter your Facebook account link" />
+                            </div>
+                            <div className="input-block">
+                                <SocialMediaTitle icon={instagramIcon} alt="Instagram Icon"
+                                    title="Instagram" />
+                                <Input type="text" name="instagram-account" placeholder="https://www.instagram.com/yourstore/" />
+                                <Label htmlFor="instagram-account" text="Enter your Instagram account link" />
+                            </div>
+                            <div className="input-block">
+                                <SocialMediaTitle icon={twitterIcon} alt="Twitter Icon"
+                                    title="Twitter" />
+                                <Input type="text" name="facebook-account" placeholder="https://www.twitter.com/yourstore/" />
+                                <Label htmlFor="twitter-account" text="Enter your Twitter account link" />
+                            </div>
+                            <div className="input-block">
+                                <SocialMediaTitle icon={linkedinIcon} alt="LinkedIn Icon"
+                                    title="LinkedIn" />
+                                <Input type="text" name="linkedin-account" placeholder="https://www.linkedin.com/yourstore/" />
+                                <Label htmlFor="linkedin-account" text="Enter your LinkedIn account link" />
+                            </div>
                         </div>
-
                     </section>
                 </div>
             </section>

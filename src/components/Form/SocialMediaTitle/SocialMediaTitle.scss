@@ -1,7 +1,19 @@
 @import "./../../../css/variables.scss";
 
-.page-title{
-    color: $blue;
-    font-family: $font-family-second;
-    font-weight: bold;
+.social-media-wrapper {
+  display: flex;
+  margin-bottom: 0.5rem;
+  p {
+    &.social-media {
+      font-size: 0.9rem;
+      color: $medium-grey;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 0.5rem;
+      span {
+        padding-left: 0.5rem;
+      }
+    }
+  }
 }
