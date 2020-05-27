@@ -6,6 +6,7 @@ import SideContent from '../Form/SideContent';
 import Input from '../Form/Input';
 import Label from '../Form/Label';
 import Textarea from '../Form/Textarea';
+import Upload from '../Form/Upload';
 import './AdoptMyShop.scss';
 
 export default function AdoptMyShop() {
@@ -81,6 +82,9 @@ export default function AdoptMyShop() {
                                 <Textarea id="products-description" rows="5" cols="10" maxLength='250'
                                     placeholder="Which products are you currently offering for takeout/delivery?" required />
                                 <Label htmlFor="products-description" text="Products Description" />
+                            </div>
+                            <div className="input-block">
+                                <Upload title="Upload Image"/>
                             </div>
                         </div>
                     </section>
