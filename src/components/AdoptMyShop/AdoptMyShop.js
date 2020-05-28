@@ -29,18 +29,18 @@ export default function AdoptMyShop() {
                             />
                         </div>
                         <div className="offset-md-1 col-md-8">
-                            <InputFull 
-                                text="Enter your name" 
-                                name="full-name" 
-                                placeholder="Full Name" 
-                                htmlFor="full-name" 
+                            <InputFull
+                                text="Enter your name"
+                                name="full-name"
+                                placeholder="Full Name"
+                                htmlFor="full-name"
                             />
-                            <InputFull 
-                                type="tel" 
-                                text="Enter your phone number" 
-                                name="phone" 
-                                placeholder="Phone Number" 
-                                htmlFor="phone" 
+                            <InputFull
+                                type="tel"
+                                text="Enter your phone number"
+                                name="phone"
+                                placeholder="Phone Number"
+                                htmlFor="phone"
                             />
                         </div>
                     </section>
@@ -52,11 +52,11 @@ export default function AdoptMyShop() {
                             />
                         </div>
                         <div className="offset-md-1 col-md-8">
-                            <InputFull 
-                                name="business-name" 
-                                placeholder="Business Name" 
-                                text="Enter your Business Name" 
-                                htmlFor="business-name" 
+                            <InputFull
+                                name="business-name"
+                                placeholder="Business Name"
+                                text="Enter your Business Name"
+                                htmlFor="business-name"
                             />
                             <div className="input-block">
                                 <select name="market" id="market-select" className="full-select">
@@ -69,31 +69,31 @@ export default function AdoptMyShop() {
                                 </select>
                                 <label htmlFor="market-select">Select your business market</label>
                             </div>
-                            <InputFull 
-                                name="main-address" 
-                                placeholder="Main Address" 
-                                text="Enter your Business Address" 
-                                htmlFor="main-address" 
+                            <InputFull
+                                name="main-address"
+                                placeholder="Main Address"
+                                text="Enter your Business Address"
+                                htmlFor="main-address"
                             />
-                            <Textarea 
-                                id="business-description" 
-                                rows="5" 
-                                cols="10" 
+                            <Textarea
+                                id="business-description"
+                                rows="5"
+                                cols="10"
                                 maxLength='250'
-                                placeholder="Describe your Business" 
-                                text="Enter your Business Description" 
+                                placeholder="Describe your Business"
+                                text="Enter your Business Description"
                                 htmlFor="business-description"
-                             />
-                            <Textarea 
-                                id="products-description" 
-                                rows="5" 
-                                cols="10" 
-                                maxLength='250'
-                                placeholder="Which products are you currently offering for takeout/delivery?" 
-                                text="Enter your Business Description" 
-                                hrmlFor="products-description" 
                             />
-                                <Upload title="Upload Image" />
+                            <Textarea
+                                id="products-description"
+                                rows="5"
+                                cols="10"
+                                maxLength='250'
+                                placeholder="Which products are you currently offering for takeout/delivery?"
+                                text="Enter your Business Description"
+                                hrmlFor="products-description"
+                            />
+                            <Upload title="Upload Image" />
                         </div>
                     </section>
                     <section className="row">
@@ -152,7 +152,10 @@ export default function AdoptMyShop() {
                         <div className="offset-md-1 col-md-8">
                             <div className="row">
                                 <div className="col-md-2">
-                                    <input type="checkbox" id="adopt-my-shop-consentiment" className="consentiment" defaultChecked />
+                                    <label className="checkbox-label">
+                                        <input type="checkbox" id="adopt-my-shop-consentiment" defaultChecked />
+                                        <span className="checkbox-custom"></span>
+                                    </label>
                                 </div>
                                 <div className="col-md-10">
                                     <Consentiment />

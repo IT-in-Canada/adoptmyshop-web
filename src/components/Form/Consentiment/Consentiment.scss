@@ -1,19 +1,15 @@
 @import "./../../../css/variables.scss";
 
-.social-media-wrapper {
-  display: flex;
-  margin-bottom: 0.5rem;
-  p {
-    &.social-media {
-      font-size: 0.9rem;
-      color: $medium-grey;
-      margin-bottom: 0;
-      display: flex;
-      align-items: center;
-      padding-left: 0.5rem;
-      span {
-        padding-left: 0.5rem;
-      }
+.consentiment-text{
+  font-size: 0.875rem;
+  position: relative;
+  bottom: 4px;
+  a{
+    color: $blue;
+    font-weight: bold;
+    &:hover{
+      color: $light-black;
+      text-decoration: none;
     }
   }
 }
