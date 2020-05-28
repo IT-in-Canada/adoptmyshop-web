@@ -163,6 +163,20 @@ export default function AdoptMyShop() {
                             </div>
                         </div>
                     </section>
+                    <section className="row">
+                        <div className="offset-md-7 col-md-5">
+                            <div className="row">
+                                <div className="col-xs-2">
+                                    <button className="btn cancel">Cancel</button>
+
+                                </div>
+                                <div className="offset-xs-1 col-xs-2">
+                                    <button className="btn send">Send</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
             <Footer />

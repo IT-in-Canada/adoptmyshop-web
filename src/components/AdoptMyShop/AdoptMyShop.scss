@@ -42,18 +42,14 @@ section {
       cursor: pointer;
       &:checked ~ .checkbox-custom {
         border-radius: 5px;
-        -webkit-transform: rotate(0deg) scale(1);
-        -ms-transform: rotate(0deg) scale(1);
-        transform: rotate(0deg) scale(1);
         opacity: 1;
-        border: 2px solid #ffffff;
         &:after {
           -webkit-transform: rotate(45deg) scale(1);
           -ms-transform: rotate(45deg) scale(1);
           transform: rotate(45deg) scale(1);
           opacity: 1;
-          left: 11px;
-          top: 6px;
+          left: 13px;
+          top: 7px;
           width: 6px;
           height: 12px;
           border: solid $white;
@@ -96,14 +92,37 @@ section {
       }
     }
   }
+
+  button {
+    &.btn {
+      &.send {
+        color: #ffffff;
+        background-color: $orange;
+        border-radius: 0;
+        padding: 0.7rem;
+        width: 150px;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+      }
+      &.cancel{
+        width: 150px;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        padding: 0.7rem;
+        text-decoration: underline;
+      }
+      &:hover{
+        opacity:0.6;
+      }
+    }
+  }
 }
 
-@media (min-width: 688px) {
+@media (min-width:767px) {
   section {
     .checkbox-label {
       .checkbox-custom {
-        top: 0px;
-        bottom: 0;
+        bottom: 33px;
       }
     }
   }
