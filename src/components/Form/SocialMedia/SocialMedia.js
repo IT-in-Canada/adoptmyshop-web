@@ -4,7 +4,7 @@ import './SocialMedia.scss';
 export default function SocialMedia({ icon, alt, title, type = "text", name, placeholder, text, customClass = "full-input"}) {
     return (
         <div className="input-block">
-            <div className="social-media-wrapper">
+            <div className="social-title-media-wrapper">
                 <img src={icon} alt={alt} />
                 <p className="social-media">{title}<span> (optional)</span></p>
             </div>
