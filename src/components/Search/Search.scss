@@ -39,21 +39,12 @@ section.search {
   button {
     &.btn {
       &.search-control {
-        color: $white;
-        background-color: $orange;
-        border-radius: 0;
-        padding: 1rem 1.6rem;
-        width: 150px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
+        @include button-primary($white, $orange, 150px, 1rem 1.6rem, $font-family-third);
         span {
           position: relative;
           top: 2px;
           left: 2px;
           font-size: 1.05rem;
-        }
-        &:hover {
-          opacity: 0.6;
         }
       }
     }

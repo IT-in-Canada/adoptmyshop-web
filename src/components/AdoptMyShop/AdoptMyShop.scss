@@ -96,23 +96,11 @@ section {
   button {
     &.btn {
       &.send {
-        color: #ffffff;
-        background-color: $orange;
-        border-radius: 0;
-        padding: 0.7rem;
-        width: 150px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
+        @include button-primary($white, $orange, 150px, 0.7rem, $font-family-third);
       }
       &.cancel{
-        width: 150px;
-        font-family: "Roboto Condensed", sans-serif;
-        text-transform: uppercase;
-        padding: 0.7rem;
+        @include button-primary($light-black, transparent, 150px, 0.7rem, $font-family-third);
         text-decoration: underline;
-      }
-      &:hover{
-        opacity:0.6;
       }
     }
   }
