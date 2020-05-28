@@ -8,6 +8,5 @@ export default function SideContent({title, content}) {
             <p className="side-content-title">{title}</p>
             <p className="side-content-text">{content}</p>
         </Fragment>
-
     );
 }

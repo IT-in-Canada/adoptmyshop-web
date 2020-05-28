@@ -3,11 +3,11 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Title from '../Form/Title';
 import SideContent from '../Form/SideContent';
-import Input from '../Form/Input';
-import Label from '../Form/Label';
+import InputFull from '../Form/InputFull/';
 import Textarea from '../Form/Textarea';
 import Upload from '../Form/Upload';
-import SocialMediaTitle from '../Form/SocialMediaTitle';
+import Consentiment from '../Form/Consentiment';
+import SocialMedia from '../Form/SocialMedia';
 import facebookIcon from './images/facebook.svg';
 import instagramIcon from './images/instagram.svg';
 import twitterIcon from './images/twitter.svg';
@@ -29,18 +29,19 @@ export default function AdoptMyShop() {
                             />
                         </div>
                         <div className="offset-md-1 col-md-8">
-                            <div className="input-block">
-                                <Input type="text" name="full-name" placeholder="Full Name" required />
-                                <Label htmlFor="full-name" text="Enter your Full Name" required />
-                            </div>
-                            <div className="input-block">
-                                <Input type="email" name="email" placeholder="Email" required />
-                                <Label htmlFor="email" text="Enter your Email" />
-                            </div>
-                            <div className="input-block">
-                                <Input type="phone" name="personal-phone" placeholder="Phone" required />
-                                <Label htmlFor="personal-phone" text="Enter your Phone Number" />
-                            </div>
+                            <InputFull 
+                                text="Enter your name" 
+                                name="full-name" 
+                                placeholder="Full Name" 
+                                htmlFor="full-name" 
+                            />
+                            <InputFull 
+                                type="tel" 
+                                text="Enter your phone number" 
+                                name="phone" 
+                                placeholder="Phone Number" 
+                                htmlFor="phone" 
+                            />
                         </div>
                     </section>
                     <section className="row">
@@ -51,10 +52,12 @@ export default function AdoptMyShop() {
                             />
                         </div>
                         <div className="offset-md-1 col-md-8">
-                            <div className="input-block">
-                                <Input type="text" name="business-name" placeholder="Business Name" required />
-                                <Label htmlFor="business-name" text="Enter your Business Name" />
-                            </div>
+                            <InputFull 
+                                name="business-name" 
+                                placeholder="Business Name" 
+                                text="Enter your Business Name" 
+                                htmlFor="business-name" 
+                            />
                             <div className="input-block">
                                 <select name="market" id="market-select" className="full-select">
                                     <option value="">Market</option>
@@ -64,33 +67,33 @@ export default function AdoptMyShop() {
                                     <option value="decoration">Decoration</option>
                                     <option value="technology">Technology</option>
                                 </select>
-                                <Label htmlFor="market-select" text="Select your Market" />
+                                <label htmlFor="market-select">Select your business market</label>
                             </div>
-                            <div className="input-block">
-                                <Input type="text" name="main-address" placeholder="Main Address" required />
-                                <Label htmlFor="" text="Enter your Business Address" />
-                            </div>
-                            <div className="input-block">
-                                <Input type="phone" name="business-phone" placeholder="Phone" required />
-                                <Label htmlFor="business-phone" text="Enter your Business Phone Number" />
-                            </div>
-                            <div className="input-block">
-                                <Input type="text" name="business-website" placeholder="URL (optional)" />
-                                <Label htmlFor="business-website" text="Enter your Business Website" />
-                            </div>
-                            <div className="input-block">
-                                <Textarea id="business-description" rows="5" cols="10" maxLength='250'
-                                    placeholder="Describe your Business" required />
-                                <Label htmlFor="business-description" text="Business Description" />
-                            </div>
-                            <div className="input-block">
-                                <Textarea id="products-description" rows="5" cols="10" maxLength='250'
-                                    placeholder="Which products are you currently offering for takeout/delivery?" required />
-                                <Label htmlFor="products-description" text="Products Description" />
-                            </div>
-                            <div className="input-block">
+                            <InputFull 
+                                name="main-address" 
+                                placeholder="Main Address" 
+                                text="Enter your Business Address" 
+                                htmlFor="main-address" 
+                            />
+                            <Textarea 
+                                id="business-description" 
+                                rows="5" 
+                                cols="10" 
+                                maxLength='250'
+                                placeholder="Describe your Business" 
+                                text="Enter your Business Description" 
+                                htmlFor="business-description"
+                             />
+                            <Textarea 
+                                id="products-description" 
+                                rows="5" 
+                                cols="10" 
+                                maxLength='250'
+                                placeholder="Which products are you currently offering for takeout/delivery?" 
+                                text="Enter your Business Description" 
+                                hrmlFor="products-description" 
+                            />
                                 <Upload title="Upload Image" />
-                            </div>
                         </div>
                     </section>
                     <section className="row">
@@ -101,29 +104,59 @@ export default function AdoptMyShop() {
                             />
                         </div>
                         <div className="offset-md-1 col-md-8">
-                            <div className="input-block">
-                                <SocialMediaTitle icon={facebookIcon} alt="Facebook Icon"
-                                    title="Facebook" />
-                                <Input type="text" name="facebook-account" placeholder="https://www.facebook.com/yourstore/" />
-                                <Label htmlFor="facebook-account" text="Enter your Facebook account link" />
-                            </div>
-                            <div className="input-block">
-                                <SocialMediaTitle icon={instagramIcon} alt="Instagram Icon"
-                                    title="Instagram" />
-                                <Input type="text" name="instagram-account" placeholder="https://www.instagram.com/yourstore/" />
-                                <Label htmlFor="instagram-account" text="Enter your Instagram account link" />
-                            </div>
-                            <div className="input-block">
-                                <SocialMediaTitle icon={twitterIcon} alt="Twitter Icon"
-                                    title="Twitter" />
-                                <Input type="text" name="facebook-account" placeholder="https://www.twitter.com/yourstore/" />
-                                <Label htmlFor="twitter-account" text="Enter your Twitter account link" />
-                            </div>
-                            <div className="input-block">
-                                <SocialMediaTitle icon={linkedinIcon} alt="LinkedIn Icon"
-                                    title="LinkedIn" />
-                                <Input type="text" name="linkedin-account" placeholder="https://www.linkedin.com/yourstore/" />
-                                <Label htmlFor="linkedin-account" text="Enter your LinkedIn account link" />
+                            < SocialMedia
+                                icon={facebookIcon}
+                                alt="Facebook Icon"
+                                title="Facebook"
+                                name="facebook-account"
+                                htmlFor="facebook-account"
+                                placeholder="https://www.facebook.com/yourstore/"
+                                text="Enter your Facebook account link"
+                            />
+                            < SocialMedia
+                                icon={instagramIcon}
+                                alt="Instagram Icon"
+                                title="Instagram"
+                                name="instagram-account"
+                                htmlFor="instagram-account"
+                                placeholder="https://www.instagram.com/yourstore/"
+                                text="Enter your Instagram account link"
+                            />
+                            < SocialMedia
+                                icon={twitterIcon}
+                                alt="Twitter Icon"
+                                title="Twitter"
+                                name="twitter-account"
+                                htmlFor="twitter-account"
+                                placeholder="https://www.twitter.com/yourstore/"
+                                text="Enter your Twitter account link"
+                            />
+                            < SocialMedia
+                                icon={linkedinIcon}
+                                alt="LinkedIn Icon"
+                                title="LinkedIn"
+                                name="linkedin-account"
+                                htmlFor="linkedin-account"
+                                placeholder="https://www.linkedin.com/yourstore/"
+                                text="Enter your LinkedIn account link"
+                            />
+                        </div>
+                    </section>
+                    <section className="row">
+                        <div className="col-md-3 side-content">
+                            <SideContent
+                                title="Personal Authorization"
+                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                            />
+                        </div>
+                        <div className="offset-md-1 col-md-8">
+                            <div className="row">
+                                <div className="col-md-2">
+                                    <input type="checkbox" id="adopt-my-shop-consentiment" className="consentiment" defaultChecked />
+                                </div>
+                                <div className="col-md-10">
+                                    <Consentiment />
+                                </div>
                             </div>
                         </div>
                     </section>
