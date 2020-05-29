@@ -1,0 +1,22 @@
+@import "./../../../css/variables.scss";
+
+p.title-upload {
+  font-weight: bold;
+  font-size: 1rem;
+  color: $grey;
+}
+
+.image-upload {
+  label {
+    margin-left: 0;
+    cursor: pointer;
+  }
+  p {
+    font-size: 0.875rem;
+    color: $grey;
+    font-style: italic;
+    span {
+      font-weight: bold;
+    }
+  }
+}

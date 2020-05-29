@@ -1,0 +1,15 @@
+@import "./../../../css/variables.scss";
+
+.consentiment-text{
+  font-size: 0.875rem;
+  position: relative;
+  bottom: 4px;
+  a{
+    color: $blue;
+    font-weight: bold;
+    &:hover{
+      color: $light-black;
+      text-decoration: none;
+    }
+  }
+}

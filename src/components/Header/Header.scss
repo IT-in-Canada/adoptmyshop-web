@@ -6,7 +6,7 @@ header {
 }
 
 @media (min-width: 992px) {
-  header {
+  header.full {
     background: url("/assets/home-background.png") no-repeat top right;
     background-position: right -140px top -3px;
     position: relative;

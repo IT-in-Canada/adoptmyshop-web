@@ -5,7 +5,7 @@
 }
 body {
   color: $light-black;
-  font-family: $font-family-primary;
+  font-family: $font-family-primary !important;
   background-color: $white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,14 +29,10 @@ button {
   cursor: pointer;
 }
 a {
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  @include transition(all 0.25s ease-in-out);
 }
 button.btn {
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  @include transition(all 0.25s ease-in-out);
   &:focus {
     outline: none;
     box-shadow: none;

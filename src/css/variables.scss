@@ -2,6 +2,8 @@
 $light-black: #272727;
 $white: #ffffff;
 $medium-grey: #a8a8a8;
+$light-grey: #e2e2e2;
+$grey: #767676;
 $dark-grey: #343434;
 $blue: #2f5fc7;
 $green-1: #d6f4ef;
@@ -21,3 +23,28 @@ $font-size-mobile: 16px;
 $font-family-primary: "Open Sans", sans-serif;
 $font-family-second: "Roboto", sans-serif;
 $font-family-third: "Roboto Condensed", sans-serif;
+
+/* Mixins */
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin button-primary($color, $background, $width, $padding, $font) {
+  color: $color;
+  background-color: $background;
+  width: $width;
+  padding: $padding;
+  font-family: $font;
+  border-radius: 0;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

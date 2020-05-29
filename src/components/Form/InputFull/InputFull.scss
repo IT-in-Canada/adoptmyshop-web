@@ -1,0 +1,31 @@
+@import "./../../../css/variables.scss";
+
+input {
+  &.full-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid $light-grey;
+    &::-webkit-input-placeholder {
+      color: $medium-grey;
+      font-size: 0.875rem;
+    }
+    &::-moz-placeholder {
+      color: $medium-grey;
+      font-size: 0.875rem;
+    }
+    &:-ms-input-placeholder {
+      color: $medium-grey;
+      font-size: 0.875rem;
+    }
+    &:-moz-placeholder {
+      color: $medium-grey;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+label{
+  font-size: 0.7rem;
+  color: $medium-grey;
+  margin-left: 0.5rem;
+}
