@@ -12,6 +12,7 @@ import facebookIcon from './images/facebook.svg';
 import instagramIcon from './images/instagram.svg';
 import twitterIcon from './images/twitter.svg';
 import linkedinIcon from './images/linkedin.svg';
+import { Link } from 'react-router-dom';
 import './AdoptMyShop.scss';
 
 export default function AdoptMyShop() {
@@ -170,10 +171,13 @@ export default function AdoptMyShop() {
                                     <button className="btn cancel">Cancel</button>
 
                                 </div>
-                                <div className="offset-xs-1 col-xs-2">
-                                    <button className="btn send">Send</button>
+                                <Link to="/adopt-my-shop-submission-confirmation" title="Submission Confirmation Page">
+                                    <div className="offset-xs-1 col-xs-2">
+                                        <button className="btn send">Send</button>
 
-                                </div>
+                                    </div>
+                                </Link>
+
                             </div>
                         </div>
                     </section>
