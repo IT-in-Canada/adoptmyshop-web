@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import './SubmitAdopt.scss';
+import './SubmitNominate.scss';
 
-export default function SubmitAdopt() {
+export default function SubmitNominate() {
     return (
         <Fragment>
             <Header renderStyle="slim" />
-            <section className="submit-confirmation-adopt">
+            <section className="submit-confirmation-nominate">
                 <div className="container">
                     <div className="row">
                         <div className="col-md">

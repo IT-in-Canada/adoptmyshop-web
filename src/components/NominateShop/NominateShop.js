@@ -171,7 +171,7 @@ export default function NominateShop() {
                                     <button className="btn cancel">Cancel</button>
 
                                 </div>
-                                <Link to="/adopt-my-shop-submission-confirmation" title="Submission Confirmation Page">
+                                <Link to="/nominate-a-shop-submission-confirmation" title="Submission Confirmation Page">
                                     <div className="offset-xs-1 col-xs-2">
                                         <button className="btn send">Send</button>
 
