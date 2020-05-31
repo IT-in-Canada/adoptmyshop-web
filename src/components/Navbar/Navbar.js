@@ -14,9 +14,11 @@ export default function Navbar() {
             </button>
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Nominate a Shop </a>
-                    </li>
+                    <Link to="/nominate-a-shop" className="nav-link" title="Go to Nominate a Shop">
+                        <li className="nav-item">
+                            Nominate a Shop
+                        </li>
+                    </Link>
                     <Link to="/adopt-my-shop" className="nav-link" title="Go to Adopt my Shop">
                         <li className="nav-item">
                             I am a Business
