@@ -51,10 +51,12 @@ export default function BusinessAction() {
                   eiusmod tempor incididunt ut labore et dolore magna aliqua
                   lorem ipsum dolor.
                 </p>
-                                <button className="btn">
-                                    Learn More &nbsp;<span
-                                    ><FaLongArrowAltRight /></span>
-                                </button>
+                                <Link to="/nominate-a-shop" title="Go to Nominate a Shop">
+                                    <button className="btn">
+                                        Learn More &nbsp;<span
+                                        ><FaLongArrowAltRight /></span>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
