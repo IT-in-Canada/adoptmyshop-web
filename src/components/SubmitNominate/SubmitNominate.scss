@@ -1,14 +1,48 @@
 @import "./../../css/variables.scss";
 
-section{
-    &.submit-confirmation-nominate{
-        margin-top: 2rem;
+// section{
+//     &.submit-confirmation-nominate{
+//         margin-top: 2rem;
+//         height: 500px;
+//         background: url("/assets/nominate-shop-background.svg") no-repeat center left;
+//         background-position: left 0px bottom -1px;
+//         background-size: contain;
+//         h3{
+//             text-align: center;
+//         }
+//     }
+// }
+
+section {
+    &.submit-confirmation-nominate {
+      .nominate-background {
+        background: url("/assets/nominate-shop-background.svg") no-repeat;
+        background-position: left 0.5rem top 6rem;
         height: 500px;
-        background: url("/assets/nominate-shop-background.svg") no-repeat center left;
-        background-position: left 0px bottom -1px;
-        background-size: contain;
-        h3{
-            text-align: center;
+      }
+      .nominate-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+          color: $green-4;
+          font-size: 1.75rem;
         }
+        p {
+          &:first-of-type {
+            margin-bottom: 0.2rem;
+          }
+        }
+      }
     }
-}
+  }
+  
+  @media (max-width: 375px) {
+    section {
+      &.submit-confirmation-nominate {
+        .nominate-background {
+          background-position: center top 6rem;
+        }
+      }
+    }
+  }
