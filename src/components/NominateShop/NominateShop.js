@@ -25,29 +25,6 @@ export default function NominateShop() {
                     <section className="row">
                         <div className="col-md-3 side-content">
                             <SideContent
-                                title="Personal Information"
-                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam condimentum, mattis erat eu, lobortis elit."
-                            />
-                        </div>
-                        <div className="offset-md-1 col-md-8">
-                            <InputFull
-                                text="Enter your name"
-                                name="full-name"
-                                placeholder="Full Name"
-                                htmlFor="full-name"
-                            />
-                            <InputFull
-                                type="tel"
-                                text="Enter your phone number"
-                                name="phone"
-                                placeholder="Phone Number"
-                                htmlFor="phone"
-                            />
-                        </div>
-                    </section>
-                    <section className="row">
-                        <div className="col-md-3 side-content">
-                            <SideContent
                                 title="Business Information"
                                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a quam condimentum, mattis erat eu, lobortis elit."
                             />
