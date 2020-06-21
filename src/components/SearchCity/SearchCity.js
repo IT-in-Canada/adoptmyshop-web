@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import SearchItem from '../SearchItem';
 import './SearchCity.scss';
 
 export default function SearchCity() {
@@ -10,52 +11,16 @@ export default function SearchCity() {
                         <div className="col">
                             <h2>Search by City</h2>
                             <div className="row">
-                                <div className="col-sm-6 col-md-3 col-lg-3">
-                                    <a href="#">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/vancouver.png"
-                                            alt="Vancouver"
-                                        />
-                                        Vancouver
-                                    </a>
-                                </div>
-                                <div className="col-sm-6 col-md-3 col-lg-3">
-                                    <a href="#">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/toronto.png"
-                                            alt="Toronto"
-                                        />
-                                        Toronto
-                                    </a>
-                                </div>
-                                <div className="col-sm-6 col-md-3 col-lg-3">
-                                    <a href="#">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/montreal.png"
-                                            alt="Montreal"
-                                        />
-                                        Montreal
-                                    </a>
-                                </div>
-                                <div className="col-sm-6 col-md-3 col-lg-3">
-                                    <a href="#">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/calgary.png"
-                                            alt="Calgary"
-                                        />
-                                        Calgary
-                                    </a>
-                                </div>
+                                <SearchItem href="#" imgPath="assets/vancouver.png" alt="Vancouver" text="Vancouver"/>
+                                <SearchItem href="#" imgPath="assets/toronto.png" alt="Toronto" text="Toronto"/>
+                                <SearchItem href="#" imgPath="assets/montreal.png" alt="Montreal" text="Montreal"/>
+                                <SearchItem href="#" imgPath="assets/calgary.png" alt="Calgary" text="Calgary"/>
                             </div>
                             <div className="load-more">
                                 <p>Load More <span>+</span></p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </section>
             <section className="search-city-mobile">

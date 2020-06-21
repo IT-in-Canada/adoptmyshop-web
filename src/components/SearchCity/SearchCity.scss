@@ -2,18 +2,6 @@
 
 section.search-city {
   padding-top: 2rem;
-  img {
-    margin-bottom: 1rem;
-  }
-  a {
-    font-family: $font-family-third;
-    font-size: 1.3rem;
-    color: $light-black;
-    &:hover {
-      text-decoration: none;
-      color: $blue;
-    }
-  }
 }
 .load-more {
   margin-top: 2.5rem;
@@ -58,7 +46,7 @@ section.search-city-mobile {
     color: $light-black;
     &:hover {
       text-decoration: none;
-      color: var(--medium-grey);
+      color: $blue;
     }
   }
 }

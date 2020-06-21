@@ -1,0 +1,16 @@
+@import "../../css/variables.scss";
+
+.search-item {
+  a {
+    font-family: $font-family-third;
+    font-size: 1.3rem;
+    color: $light-black;
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+}

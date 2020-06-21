@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import Title from '../Form/Title';
+import Title from '../Title';
 import SideContent from '../Form/SideContent';
 import InputFull from '../Form/InputFull/';
 import Textarea from '../Form/Textarea';
