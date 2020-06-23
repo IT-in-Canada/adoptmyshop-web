@@ -6,6 +6,7 @@ import SubmitAdopt from './components/SubmitAdopt';
 import NominateShop from './components/NominateShop';
 import SubmitNominate from './components/SubmitNominate';
 import Cities from './components/Cities';
+import BusinessCity from './components/BusinessCity';
 import './css/app.scss';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/nominate-a-shop" component={NominateShop} />
         <Route path="/nominate-a-shop-submission-confirmation" component={SubmitNominate} />
         <Route path="/cities" component={Cities} />
+        <Route path="/business-city" component={BusinessCity} />
       </Switch>
     </Router>
   );
